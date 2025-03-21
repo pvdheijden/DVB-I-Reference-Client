@@ -1,0 +1,10 @@
+services:
+  dvbi_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    environment:
+      - DVB_API_URL=http://dvbapi:8080
+    ports:
+      - "8080:80"
