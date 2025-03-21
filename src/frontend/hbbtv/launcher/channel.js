@@ -35,7 +35,7 @@ Channel.prototype.getNowNext = function () {
                 try {
                   var box = new Box(self.epg[item.name], self.element_id + "_" + item.name);
                   box.name = item.name;
-                  box.parentimage = self.epg[item.name].mediaimage || "../CommonUI/empty.png";
+                  box.parentimage = self.epg[item.name].mediaimage || "../hbbtv/CommonUI/empty.png";
                   box.description = item.description || "";
                   var now = box;
                   var info = "";
@@ -121,7 +121,7 @@ Channel.prototype.getNowNext = function () {
                   var box = new Box(next, self.element_id + "_" + "next");
                   if (box) {
                     box.name = "next";
-                    box.parentimage = next.mediaimage2 || "../CommonUI/empty.png";
+                    box.parentimage = next.mediaimage2 || "../hbbtv/CommonUI/empty.png";
                     box.description = "Next";
 
                     //info += "<span>";
@@ -302,7 +302,7 @@ Channel.prototype.init = function (init_obj, element_id) {
     var placeholder = { text: "No program information" };
     var box = new Box(placeholder, self.element_id + "_" + self.code);
     box.name = self.name;
-    box.parentimage = "../CommonUI/empty.png";
+    box.parentimage = "../hbbtv/CommonUI/empty.png";
     box.description = "";
     var now = box;
     var info = "No program information";

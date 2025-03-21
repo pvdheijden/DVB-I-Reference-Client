@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceList xsi:schemaLocation="urn:dvb:metadata:servicediscovery:2024 schemas/dvbi_v6.0.xsd" xml:lang="en" id="tag:dvb.org,2024:ref-advanced-codecs" version="2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:tva="urn:tva:metadata:2024"
+  xmlns:dvbi-types="urn:dvb:metadata:servicediscovery-types:2023">
+  <Name>Advanced codecs Service list</Name>
+  <ProviderName>DVB</ProviderName>
+  <LCNTableList>
+    <LCNTable>
+      <LCN channelNumber="1" serviceRef="tag:dvb.org,2021:advsid1"/>
+    </LCNTable>
+  </LCNTableList>
+  <Service version="1">
+    <UniqueIdentifier>tag:dvb.org,2021:advsid1</UniqueIdentifier>
+    <ServiceInstance priority="1">
+      <DASHDeliveryParameters>
+        <UriBasedLocation contentType="application/dash+xml">
+          <dvbi-types:URI>https://d311iqjvb3q514.cloudfront.net/dolbyac4/manifest.mpd</dvbi-types:URI>
+        </UriBasedLocation>
+      </DASHDeliveryParameters>
+      <ContentAttributes xmlns="urn:dvb:metadata:servicediscovery:2024">
+        <AudioAttributes>
+          <tva:Coding xmlns:tva="urn:tva:metadata:2024" href="urn:dvb:metadata:cs:AudioCodecCS:2020:4.1.4"/>
+        </AudioAttributes>
+        <VideoConformancePoint href="urn:dvb:metadata:cs:VideoConformancePointsCS:2017:2.1.9"/>
+      </ContentAttributes>
+    </ServiceInstance>
+    <ServiceName>HEVC UHD video + AC4 audio</ServiceName>
+    <ProviderName>Dolby</ProviderName>
+  </Service>
+</ServiceList>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceList xsi:schemaLocation="urn:dvb:metadata:servicediscovery:2024 schemas/dvbi_v6.0.xsd" xml:lang="en" id="tag:dvb.org,2024:regionlist" version="2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:tva="urn:tva:metadata:2024"
+  xmlns:dvbi-types="urn:dvb:metadata:servicediscovery-types:2023">
+  <Name>Regionlist</Name>
+  <ProviderName>DVB</ProviderName>
+  <RegionList version="1">
+    <Region regionID="augsburg" countryCodes="augsburg"/>
+  </RegionList>
+  <LCNTableList>
+    <LCNTable>
+      <TargetRegion>augsburg</TargetRegion>
+      <LCN channelNumber="2" serviceRef="tag:dvb.org,2024:franken"/>
+      <LCN channelNumber="2" serviceRef="tag:dvb.org,2024:dusseldorf"/>
+      <LCN channelNumber="1" serviceRef="tag:dvb.org,2024:deutschland"/>
+      <LCN channelNumber="2" serviceRef="tag:dvb.org,2024:koln"/>
+      <LCN channelNumber="2" serviceRef="tag:dvb.org,2024:ausburg"/>
+      <LCN channelNumber="2" serviceRef="tag:dvb.org,2024:dortmund"/>
+    </LCNTable>
+  </LCNTableList>
+  <Service version="3">
+    <UniqueIdentifier>tag:dvb.org,2024:franken</UniqueIdentifier>
+    <ServiceInstance priority="1">
+      <DASHDeliveryParameters>
+        <UriBasedLocation contentType="application/dash+xml">
+          <dvbi-types:URI>https://refapp.hbbtv.org/livesim/02_llamanofragv1/manifest.mpd</dvbi-types:URI>
+        </UriBasedLocation>
+      </DASHDeliveryParameters>
+    </ServiceInstance>
+    <ServiceName>Franken service</ServiceName>
+    <ProviderName>DVB</ProviderName>
+  </Service>
+  <Service version="3">
+    <UniqueIdentifier>tag:dvb.org,2024:dusseldorf</UniqueIdentifier>
+    <ServiceInstance priority="1">
+      <DASHDeliveryParameters>
+        <UriBasedLocation contentType="application/dash+xml">
+          <dvbi-types:URI>https://refapp.hbbtv.org/livesim/02_llamanofragv1/manifest.mpd</dvbi-types:URI>
+        </UriBasedLocation>
+      </DASHDeliveryParameters>
+    </ServiceInstance>
+    <ServiceName>Düsseldorf service</ServiceName>
+    <ProviderName>DVB</ProviderName>
+  </Service>
+  <Service version="2">
+    <UniqueIdentifier>tag:dvb.org,2024:deutschland</UniqueIdentifier>
+    <ServiceInstance priority="1">
+      <DASHDeliveryParameters>
+        <UriBasedLocation contentType="application/dash+xml">
+          <dvbi-types:URI>https://refapp.hbbtv.org/livesim/02_llamanofragv1/manifest.mpd</dvbi-types:URI>
+        </UriBasedLocation>
+      </DASHDeliveryParameters>
+    </ServiceInstance>
+    <ServiceName>Deutschland service</ServiceName>
+    <ProviderName>DVB</ProviderName>
+  </Service>
+  <Service version="3">
+    <UniqueIdentifier>tag:dvb.org,2024:koln</UniqueIdentifier>
+    <ServiceInstance priority="1">
+      <DASHDeliveryParameters>
+        <UriBasedLocation contentType="application/dash+xml">
+          <dvbi-types:URI>https://refapp.hbbtv.org/livesim/02_llamanofragv1/manifest.mpd</dvbi-types:URI>
+        </UriBasedLocation>
+      </DASHDeliveryParameters>
+    </ServiceInstance>
+    <ServiceName>Köln service</ServiceName>
+    <ProviderName>DVB</ProviderName>
+  </Service>
+  <Service version="3">
+    <UniqueIdentifier>tag:dvb.org,2024:ausburg</UniqueIdentifier>
+    <ServiceInstance priority="1">
+      <DASHDeliveryParameters>
+        <UriBasedLocation contentType="application/dash+xml">
+          <dvbi-types:URI>https://refapp.hbbtv.org/livesim/02_llamanofragv1/manifest.mpd</dvbi-types:URI>
+        </UriBasedLocation>
+      </DASHDeliveryParameters>
+    </ServiceInstance>
+    <ServiceName>Augsburg service</ServiceName>
+    <ProviderName>DVB</ProviderName>
+  </Service>
+  <Service version="2">
+    <UniqueIdentifier>tag:dvb.org,2024:dortmund</UniqueIdentifier>
+    <ServiceInstance priority="1">
+      <DASHDeliveryParameters>
+        <UriBasedLocation contentType="application/dash+xml">
+          <dvbi-types:URI>https://refapp.hbbtv.org/livesim/02_llamanofragv1/manifest.mpd</dvbi-types:URI>
+        </UriBasedLocation>
+      </DASHDeliveryParameters>
+    </ServiceInstance>
+    <ServiceName>Dortmund service</ServiceName>
+    <ProviderName>DVB</ProviderName>
+  </Service>
+</ServiceList>
