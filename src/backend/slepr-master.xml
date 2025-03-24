@@ -36,7 +36,7 @@
 		<sld:ServiceListOffering regulatorListFlag="false">
 			<sd-types:ServiceListName>Stream-IQ DE-Demo service list</sd-types:ServiceListName>
 			<sd-types:ServiceListURI contentType="application/xml">
-				<sd-types:URI>http://localhost:8000/servicelist</sd-types:URI>
+				<sd-types:URI>__STREAMIQ_SERVICELIST_URI__</sd-types:URI>
 			</sd-types:ServiceListURI>
 
 			<sd-types:Delivery>

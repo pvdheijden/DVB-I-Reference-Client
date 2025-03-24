@@ -3,5 +3,5 @@
 // install_location is the installation directory
 // see also frontend/configuration.js
 //
-$install_location = "http://localhost:8080";
+$install_location = getenv('INSTALL_LOCATION');
 ?>

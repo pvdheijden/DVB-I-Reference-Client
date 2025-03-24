@@ -1,4 +1,4 @@
-var PROVIDER_LIST = INSTALL_LOCATION + "/backend/servicelist_registry.php";
+var PROVIDER_LIST = "/backend/servicelist_registry.php";
 
 /** LCN_services_only
  * set to true to only include services in the selected region that are included in the reevant LCN table.
@@ -337,7 +337,7 @@ function formatAccessibilityAttributes(accessibility_attributes) {
     }
   }
   res += "</table>";
-  return count ? res : "none";
+  return count ? res : "No accessibility options available";
 }
 
 function parseCMCDInitInfo(data) {

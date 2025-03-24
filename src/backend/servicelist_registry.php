@@ -4,7 +4,13 @@ include 'configuration.php';
 header('Content-Type: text/xml');
 header('Access-Control-Allow-Origin: *');
 
-$list = new Simplexmlelement(file_get_contents("./slepr-master.xml"));
+$slepr_master_xml_contents = file_get_contents("./slepr-master.xml");
+$streamiq_servicelist_uri = getenv('STREAMIQ_SERVICELIST_URI');
+$slepr_master_xml_contents = str_replace("__STREAMIQ_SERVICELIST_URI__", $streamiq_servicelist_uri, $slepr_master_xml_contents);
+
+print_r($slepr_master_xml_contents);
+
+$list = new Simplexmlelement($slepr_master_xml_contents);
 $entries  = $list->children("urn:dvb:metadata:servicelistdiscovery:2024",false);
 if(isset( $_GET['regulatorListFlag'])) {
     $regulatorListFlag = $_GET['regulatorListFlag'];

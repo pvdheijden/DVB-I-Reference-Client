@@ -1,4 +1,4 @@
-var APP_IMAGES = `${INSTALL_LOCATION}/frontend/android/images`;
+var APP_IMAGES = `/frontend/android/images`;
 var CAPTIONS_ICON = `${APP_IMAGES}/noun-subtitles-78795-trim.png`;
 var AUDIO_DESCRIPTION_ICON = `${APP_IMAGES}/noun-audio-description-4258567-trim.png`;
 var SIGNING_ICON = `${APP_IMAGES}/ons-icon-bsl-large-mono-2.png`;

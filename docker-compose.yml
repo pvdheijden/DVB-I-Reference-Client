@@ -3,8 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    restart: on-failure
     environment:
-      - DVB_API_URL=http://dvbapi:8080
+      - INSTALL_LOCATION=http://192.168.1.99:8080
+      - STREAMIQ_SERVICELIST_URI=https://dvbi-demo.de-demo.b.stream-iq.net/servicelist
+    restart: on-failure
     ports:
       - "8080:80"
