@@ -22,4 +22,3 @@ jobs:
     - name: Push the Docker image
       run: |
         docker push ghcr.io/pvdheijden/$IMAGE_TAG
-        echo "::set-output name=image_tag::$IMAGE_TAG"
