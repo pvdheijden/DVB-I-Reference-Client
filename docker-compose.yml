@@ -3,9 +3,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        # - STREAMIQ_SERVICELIST_URI=https://dvbi-demo.de-demo.b.stream-iq.net/servicelist
+        - STREAMIQ_SERVICELIST_URI=http://localhost:8000/servicelist/Europe_Amsterdam/?region_id=f27c3e84-ddc9-4782-8f65-d667bac657a8
     environment:
-      - INSTALL_LOCATION=http://192.168.1.99:8080
-      - STREAMIQ_SERVICELIST_URI=https://dvbi-demo.de-demo.b.stream-iq.net/servicelist
+      - INSTALL_LOCATION=http://192.168.1.99:8001
+      # - STREAMIQ_SERVICELIST_URI=https://dvbi-demo.de-demo.b.stream-iq.net/servicelist
+      - STREAMIQ_SERVICELIST_URI=http://192.168.1.99:8000/servicelist/Europe_Amsterdam/?region_id=f27c3e84-ddc9-4782-8f65-d667bac657a8
     restart: on-failure
     ports:
-      - "8080:80"
+      - "8001:80"

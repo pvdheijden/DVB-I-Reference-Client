@@ -68,6 +68,9 @@ Channel.prototype.parseSchedule = function (data) {
         program.titles = [];
         for (var j = 0; j < titles.length; j++) {
           var element = titles[j];
+
+          console.log("element", element);
+
           var text = {};
           var lang = elementLanguage(element);
           if (!lang) {
@@ -84,6 +87,9 @@ Channel.prototype.parseSchedule = function (data) {
           program.descriptions = [];
           for (var j3 = 0; j3 < synopsis.length; j3++) {
             var element2 = synopsis[j3];
+
+            console.log("element2", element2);
+
             var text2 = {};
             var lang2 = elementLanguage(element2);
             if (!lang2) {
